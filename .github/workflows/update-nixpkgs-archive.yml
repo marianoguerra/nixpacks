@@ -40,7 +40,7 @@ jobs:
           echo "::set-output name=url::$URL"
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           title: Update nixpkgs archive
           commit-message: Update nixpkgs archive to `${{ steps.update-archive.outputs.sha }}`
